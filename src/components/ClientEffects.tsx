@@ -17,10 +17,7 @@ const PageLoader = dynamic(
   { ssr: false }
 )
 
-const SmoothScrollProvider = dynamic(
-  () => import('@/components/animations/SmoothScrollProvider'),
-  { ssr: false }
-)
+
 
 export default function ClientEffects() {
   return (
@@ -28,7 +25,6 @@ export default function ClientEffects() {
       <PageLoader />
       <ScrollProgress />
       <CursorGlow />
-      <SmoothScrollProvider />
     </>
   )
 }
